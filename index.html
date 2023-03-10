@@ -4,7 +4,34 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>ANEMONE</title>
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/dreamteam-5/assets/apple-touch-icon-5c48c9aa.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnAwoRGBfzpM/3AAAC0UlEQVRIx9XUX2iVdRgH8M97ztGzmT7OZYtqmpurThA1HDFCYRgEg9CLVWBBfy6CICi66EKiIIImQXQR1I0VddFF3kRCSIEVWQYSUTZt2J9lOVTwzzzhdtx2ztvFeXfY5pYSXtT3vXif9/3+nv/P7+F/j+Sf6WCpx6xTu0hvyntGygqXdLHEIzYu8H/CF0ZchoHUGadMXxTBhMnLSyGnXfMCVM2o8fKVLei/QkLAMp1KbtSCMb856HfV8kwaBR26dVqh4piDfjJBnU2CNgMG3OFq+czstFG7ve4XJLo9qd91GZs662tv2Gu6DNEb+2I60uypNaQ0vo3uSOLRONrgJqOayWfj+WgOFBR0yqs4ZL9hY5qU9LtNosegT7yoBaM+tt9py3XbqqTFC6peiZrIxWB8GQPRGkkghFgT70caaUzFeKSRxqexIXINdl28FVORxqnYHIRojdVRLyVYWT90qJHKgeiczYeIzMGuaFpkfEK8malfiIdmq2fshjgeaZyI3tyiDT6WvX/1+UzL6ijDkAO4xl2F7MbdqkeXVZY0BrU7k5Z5xlTMH/nU9cgpJUGX7bZafal7sSB2FdzsbZtQMeK4SsPDeiVwzpGLtsEMcoYLnrUJxz1nj3NqUlC13cvgqPudWTS6qYJ7wU7vzi5VUM3EDl0+m1vGuUFci6of5qkn1mQfKzylZYE2N9UHL2ccees1eh1wt/sa57cY1BZz+R479RLyxT5d6DTsj2KtqMhKD3jV2qyY5PTYqOZ8sVYsFEPJ4wb1ud1eY0nc4x3tOO0rh1W06dFtqT+1yzviZ/3ymHbSSRcsd4NVEgx50FASiQE73DQnyUkfOOA1S3xjm4c9oX1eH87b4yU/1hcKt9hms7WaVY057EMfudMOS33vaRNKtujTIeRVnPCd3fYZp1y3G3CVVs2qysZMoWAZqsazyShqsVxexZi/pP+FfXyF8DcDdeHZiOujhgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wMy0xMFQxNzoyNDoyMyswMDowMNMiZS0AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDMtMTBUMTc6MjQ6MjMrMDA6MDCif92RAAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnAwoRGBfzpM/3AAABOUlEQVQoz4XRP0iUcQDG8c+v9z1CPd8LTwMzQyG5RSEVghwEhxukliiQDhpyd7ogiCiQ1iYlanJwaWnQLUgQcWoSXUqkIsFA7/KUyj+Hd21COPhsDw/fZ3gezlH43yZ06TvNvlmLzyDDJtVBbMba2YaMrBMEkT2lkJDW7Qo2bThGm5y0n9YdELtrQq9Y5Mh7L+UVdahh2XOrsR5VT33R4KFxN+QseaJk0GNvFULSKPgD2nzQ76Mxv0DeO29if7UbkhVEYMstEeqaVORDct8zGWU1wXWXbCqfrpPyPSQ/7HrkKyKzRk17IRJQU1e/4KoNqyoqMq7htl47tm27KGcvJAsGTPmkXcFNJ34L5n2WdUfVvZD0KBqRsm/OZZ1eeWBYs0MrXlsMCbFWDfbtapJSEbRIO1R2fN7X+AdFklJ6pQi7XQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wMy0xMFQxNzoyNDoyMyswMDowMNMiZS0AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDMtMTBUMTc6MjQ6MjMrMDA6MDCif92RAAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC"
+    />
+    <link rel="manifest" href="data:application/manifest+json;base64,ewogICJuYW1lIjogIiIsCiAgInNob3J0X25hbWUiOiAiIiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiLi9hbmRyb2lkLWNocm9tZS0xOTJ4MTkyLnBuZyIsCiAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwKICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgfSwKICAgIHsKICAgICAgInNyYyI6ICIuL2FuZHJvaWQtY2hyb21lLTUxMng1MTIucG5nIiwKICAgICAgInNpemVzIjogIjUxMng1MTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICB9CiAgXSwKICAidGhlbWVfY29sb3IiOiAiI2ZmZmZmZiIsCiAgImJhY2tncm91bmRfY29sb3IiOiAiI2ZmZmZmZiIsCiAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIKfQo=" />
+    <link
+      rel="mask-icon"
+      href="/dreamteam-5/assets/safari-pinned-tab-1c253f1a.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
     
     <script type="module" crossorigin src="/dreamteam-5/assets/index-2a004632.js"></script>
     <link rel="stylesheet" href="/dreamteam-5/assets/index-3f1f90c7.css">

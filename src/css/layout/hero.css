@@ -1,0 +1,4 @@
+.hero-list {
+    list-style: none;
+    display: flex;
+}

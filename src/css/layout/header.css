@@ -6,14 +6,15 @@
     display: flex;
   }
   .logo{
+    display: inline-block;
     margin-right: 183px;
-    text-decoration: none;
+    
   }
   .navigation{
     display: none;
   }
   .header-phone{
-    text-decoration: none;
+    display: inline-block;
   }
 
   .mobile-menu-btn{

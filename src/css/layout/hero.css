@@ -6,12 +6,7 @@
 .hero-container {
   position: relative;
   z-index: 10;
-   /* max-width: 320px; */
   height: 389px;
-/*   
-   height: 100%;  */
-  /* margin: 0 auto;
-  padding: 0 16px;  */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,13 +14,11 @@
 
 @media screen and (min-width: 768px) {
   .hero-container {
-   /* max-width: 720px; */
     height: 825px; 
   }
 }
 @media screen and (min-width: 1280px) {
   .hero-container {
-     /* max-width: 1280px; */
     height: 878px; 
   }
 }
@@ -81,7 +74,7 @@
 }
 .hero-badge {
   width: 46px;
-  margin-left: 220px;
+  margin-left: 200px;
   margin-right: 70px;
   font-weight: 400;
   font-size: 14px;
@@ -92,7 +85,6 @@
   .hero-badge {
     width: 76px;
     margin-right: 0;
-    margin-left: 200px;
     font-size: 24px;
     line-height: calc(29 / 24);
   }
@@ -102,22 +94,23 @@
     width: 102px;
     font-size: 32px;
     line-height: 39px;
-    margin-left: 250px;
   }
 }
 
 .hero-btn {
-  /* width: 64px;
-  height: 76px; */
+  margin-right: 150px;
   background-color: transparent;
   border: none;
   animation: vertical-swipe 1000ms ease-out 1000ms both;
 }
 @media screen and (min-width: 768px) {
   .hero-btn {
-    /* width: 166px;
-    height: 166px; */
-    margin-right: 150px;
+    margin-right: 140px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-btn {
+    margin-right: 130px;
   }
 }
 
@@ -131,7 +124,9 @@
 }
 
 .hero-icon-arrow {
-  transform-origin: center;
+  transform-box: fill-box;
+  transform-origin: center center;
+  transform:scale(0.3);
   transition: transform 500ms ease-out;
 }
 .hero-btn:focus .hero-icon-arrow
@@ -155,10 +150,10 @@
 }
 @keyframes scale-up-center {
   0% {
-    clip-path: inset(70px 100px 70px 100px round 100px);
+    clip-path: inset(70px 120px 70px 120px round 100px);
   }
   50% {
-    clip-path: inset(60px 70px 60px 70px round 100px);
+    clip-path: inset(70px 90px 70px 90px round 100px);
   }
   100% {
     clip-path: inset(0 round 0);
@@ -168,10 +163,10 @@
 @media screen and (min-width: 768px) {
   @keyframes scale-up-center {
     0% {
-      clip-path: inset(150px 200px 130px 200px round 180px);
+      clip-path: inset(150px 220px 130px 220px round 180px);
     }
     50% {
-      clip-path: inset(110px 150px 120px 110px round 180px);
+      clip-path: inset(150px 170px 130px 170px round 180px);
     }
     100% {
       clip-path: inset(0 round 0);
@@ -339,9 +334,3 @@
   }
 }
 
-.hero-icon-circle {
-
-}
-.hero-icon-arrow {
-
-}

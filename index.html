@@ -55,8 +55,8 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-    <script type="module" crossorigin src="/dreamteam-5/assets/index-8547d7e3.js"></script>
-    <link rel="stylesheet" href="/dreamteam-5/assets/index-64e907f4.css">
+    <script type="module" crossorigin src="/dreamteam-5/assets/index-bb852880.js"></script>
+    <link rel="stylesheet" href="/dreamteam-5/assets/index-9582c9c3.css">
   </head>
   <body>
     <!-- Modals-->
@@ -169,9 +169,7 @@
 
     <button
       type="button"
-      class="mobile-menu-btn js-open-menu"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
+      class="burger-btn js-open-menu"
     >
       <svg class="mobile-menu-open-icon" width="24" height="24">
         <use href="/dreamteam-5/assets/svg_sprite-2a5d9eca.svg#icon-Burger"></use>
@@ -573,49 +571,34 @@
 
 
     <!-- Mobile menu-->
-    <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="mobile-menu-btn-close js-close-menu">
-      <svg class="mobile-menu-btn-close-icon" width="24" height="24">
+    <div class="menu js-menu-container" id="mobile-menu">
+    <button class="menu__button js-close-menu">
+      <svg class="menu__icon" width="24" height="24">
         <use href="../img/svg_sprite.svg#icon-x"></use>
       </svg>
     </button>
 
-    <ul class="mobile-menu list">
-      <li class="mobile-menu-item">
-        <a href="./index.html" class="mobile-menu-link">Anemone</a>
+    <nav class="menu__nav">
+    <ul class="menu__nav-list list">
+      <li class="menu__nav-item">
+        <a href="#hero" class="menu__nav-link js-close-menu link">Anemone</a>
       </li>
-      <li class="mobile-menu-item">
-        <a href="" class="mobile-menu-link">About us</a>
+      <li class="menu__nav-item">
+        <a href="#about" class="menu__nav-link js-close-menu link">About us</a>
       </li>
-      <li class="mobile-menu-item">
-        <a href="#" class="mobile-menu-link">Store</a>
+      <li class="menu__nav-item">
+        <a href="#store" class="menu__nav-link js-close-menu link">Store</a>
       </li>
-      <li class="mobile-menu-item">
-        <a href="#" class="mobile-menu-link">Delivery</a>
+      <li class="menu__nav-item">
+        <a href="#delivery" class="menu__nav-link js-close-menu link">Delivery</a>
       </li>
-      <li class="mobile-menu-item">
-        <a href="#" class="mobile-menu-link">Blog</a>
+      <li class="menu__nav-item">
+        <a href="#blog" class="menu__nav-link js-close-menu link">Blog</a>
       </li>
     </ul>
+    </nav>
 </div>
 
-<!-- <div class="menu js-menu-container" id="mobile-menu">
-    <button class="menu__button js-close-menu">
-        <svg class="menu__icon">
-            <use href="./images/symbol-defs.svg#icon-close"></use>
-        </svg>
-    </button>
-
-    <nav class="menu__nav">
-        <ul class="menu__nav-list list">
-            <li class="menu__nav-item"><a href="#home" class="menu__nav-link js-close-menu link">Home</a></li>
-            <li class="menu__nav-item"><a href="#products" class="menu__nav-link js-close-menu link">Products</a></li>
-            <li class="menu__nav-item"><a href="#gallery" class="menu__nav-link js-close-menu link">Gallery</a></li>
-            <li class="menu__nav-item"><a href="#feedback" class="menu__nav-link js-close-menu link">Feedback</a></li>
-            <li class="menu__nav-item"><a href="#contacts" class="menu__nav-link js-close-menu link">Contacts</a></li>
-        </ul>
-    </nav>
-</div> -->
 
     <!-- Подложка под модальным окном -->
 <div class="overlay js-overlay-modal"></div>
@@ -635,7 +618,7 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <!-- Mobile menu js -->
+    <!-- Links for mobile menu -->
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

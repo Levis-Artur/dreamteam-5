@@ -57,8 +57,8 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-    <script type="module" crossorigin src="/dreamteam-5/assets/index-232b82fb.js"></script>
-    <link rel="stylesheet" href="/dreamteam-5/assets/index-7ec30b30.css">
+    <script type="module" crossorigin src="/dreamteam-5/assets/index-da82cfbc.js"></script>
+    <link rel="stylesheet" href="/dreamteam-5/assets/index-e15b22cc.css">
   </head>
   <body>
     <!-- Modals-->
@@ -88,6 +88,8 @@
         pattern="[a-zA-Zа-яА-Я]+"
         minlength="2"
         placeholder="Kristin Watson"
+        required
+        autofocus
       />
     </label>
 
@@ -95,14 +97,15 @@
       <span class="modal-form-input-desc">Email</span>
 
       <input
-        class="modal-form-input"
+        class="modal-form-input input"
         type="email"
         name="user_email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
         required
         placeholder="tanya.hill@example.com"
       />
     </label>
-    <button class="modal-form-send js-open-modal" data-modal="3" type="submit">
+    <button class="modal-form-send js-open-modal button" data-modal="3" type="submit" disabled>
       Send
     </button>
   </form>
@@ -129,6 +132,7 @@
           class="modal-form-input"
           type="email"
           name="user_email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           required
           placeholder="Your email"
         />
